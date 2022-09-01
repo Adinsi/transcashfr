@@ -1,0 +1,92 @@
+@import '../seeting.scss';
+
+@media screen and (min-width:320px) and (max-width:528px) {
+    footer {
+            background-color: $color2;
+    
+            .container {
+                margin: 0px 40px;
+                padding: 10px;
+                text-align: center;
+                .containerFirst{
+                    display: none;
+                }
+    a{
+        color:$color1;
+        transition: 1s all ease;
+        &:hover{
+            color: $color3;
+        }
+    }
+            }
+         h4 {
+    
+             margin: 0px 40px;
+             color: $color1;
+         }
+         i{
+            margin-right: 10px;
+            font-size: 1.2rem;
+         }
+        }
+}
+
+@media screen and (min-width:529px) and (max-width:2500px) {
+    footer {
+        background-color: $color2;
+
+        .container {
+            margin: 0px 40px;
+            padding: 10px;
+            text-align: center;
+
+            .containerFirst {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                align-content: center;
+                .visacardElement{
+                    width: 80%;
+                    margin: auto;
+img {
+        width: 100%;
+        max-width: 100%;
+        height: 100px;
+       min-height: 80px;
+       max-height: 100px;
+        margin: auto;
+    }
+                }
+             
+            }
+
+            a {
+                color: $color1;
+                transition: 1s all ease;
+
+                &:hover {
+                    color: $color3;
+                }
+            }
+
+            .containerSecond{
+                display: flex;
+                justify-content: center;
+                .aide,.savoirPlus,.media{
+                    margin-right: 20px;
+                }
+                
+            }
+           
+        }
+ h4{
+
+    margin: 0px 40px;
+        color: $color1;
+ }
+  i {
+      margin-right: 10px;
+      font-size: 1.2rem;
+  }
+    }
+}

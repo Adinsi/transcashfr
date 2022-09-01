@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Josefin+Sans:wght@200&family=Nova+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Josefin+Sans:wght@200&family=Nova+Round&display=swap');
+
+$fontPrincipal : 'Montserrat';
+$font_1: 'Nova Round';
+$font_2: 'Dosis',
+    sans-serif;
+$font_3: 'Josefin sans',
+    serif;
+$color3: #0088a9;
+$color1: #edf0f1;
+$color2: #24252A;
+$color4: rgba(0, 136, 169, 1);
+html{
+    box-sizing: border-box;
+    
+   
+    -ms-font-family :'Montserrat';
+    -moz-font-family : 'Montserrat';
+    -webkit-font-family :'Montserrat' ;
+    font-family: $fontPrincipal;
+}
+
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    max-width : 2500px ;
+  
+
+}

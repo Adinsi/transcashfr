@@ -1,0 +1,165 @@
+
+@import '../seeting.scss';
+  @media screen and (min-width: 320px) and (max-width: 1200px){
+    .formulaire {
+            // background-color: blue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+    
+            form {
+                margin: 0 40px;
+                .bloc {
+                    // background-color: green;
+                    // margin: 20px;
+                    width: 100%;
+    
+                    label {
+                        display: flex;
+                        flex-direction: column;
+                        color:$color3;
+                        padding-bottom: 15px;
+                        position: relative;
+                        font-weight: bolder;
+                        i {
+                                position: absolute;
+                                right: 5%;
+                                top: 40%;
+                                color: $color4;
+                                z-index: 1000;
+                                font-size: 30px;
+                                cursor: pointer;
+                            }
+    
+                        input {
+                            height: 40px;
+                            padding: 10px;
+                            text-align: center;
+                            border-radius: 5px;
+                            border-color: transparent;
+                            box-shadow: 5px 5px 5px;
+    
+                            font-size: 1rem;
+                            font-weight: bolder;
+                           
+    
+                            &::placeholder {
+                                color: $color2;
+                                text-align: center;
+                                font-weight: bolder;
+                                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+                            }
+                        }
+                    }
+    
+    
+                }
+            }
+    
+            #submit {
+                display: block;
+                background: rgb(32, 32, 171);
+                box-shadow: 5px 5px 5px gray;
+                height: 60px;
+                text-align: center;
+                width: 100%;
+                margin-top: 40px;
+                // margin-left: 45px;
+                color: rgb(246, 236, 236);
+                font-size: 1.1rem;
+                border: none;
+                cursor: pointer;
+    
+                &:hover {
+                    background: rgb(4, 1, 31);
+                }
+            }
+        }
+    
+  }
+
+  @media screen and (min-width:1201px) and (max-width : 2500px) {
+    .formulaire {
+            // background-color: blue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            margin-top: 40px;
+    
+            form {
+                margin: 0 40px;
+                .bloc {
+    
+    
+                    // background-color: green;
+                    margin: 20px;
+    
+                    label {
+                        display: flex;
+                        flex-direction: column;
+                        color:$color3;
+                        padding-bottom: 15px;
+                        position: relative;
+                            i {
+                                    position: absolute;
+                                    right: 5%;
+                                    top: 40%;
+                                    color: $color4;
+                                    z-index: 1000;
+                                    font-size: 30px;
+                                    cursor: pointer;
+                                }
+    
+                        input {
+                            height: 40px;
+                            padding: 10px;
+                            text-align: center;
+                            border-radius: 5px;
+                            border-color: transparent;
+                            box-shadow: 5px 5px 5px;
+    
+                            font-size: 1.2rem;
+                            font-weight: bolder;
+    
+                            &::placeholder {
+                                color: rgb(5, 5, 142);
+                                text-align: center;
+                                font-weight: bolder;
+                                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+                            }
+                        }
+    
+    
+    
+                    }
+    
+    
+                }
+            }
+    
+            #submit {
+                display: block;
+                background: rgb(32, 32, 171);
+                box-shadow: 5px 5px 5px gray;
+                height: 80px;
+                text-align: center;
+                width: 80%;
+                margin-top: 40px;
+                margin-left: 65px;
+                color: gray;
+                font-size: 1.1rem;
+                border: none;
+                cursor: pointer;
+    
+                &:hover {
+                    background-color: rgb(26, 26, 151);
+                }
+            }
+        }
+  }

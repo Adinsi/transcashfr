@@ -1,0 +1,280 @@
+@import '../seeting.scss';
+@media screen and (min-width:320px) and( max-width:528px ){
+nav {
+        background-color: $color1;
+        height: 60px;
+        width:100%;
+        margin: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 200000000;
+      
+        .container{
+            margin: 0 40px;
+            height: 60px;
+            display: flex;
+                justify-content: space-between;
+                align-items: center;
+                align-content: center;
+                position: relative;
+               .menuBurger{
+                font-size: 1.4rem;
+                color: $color3;
+                font-weight: bold;
+                cursor: pointer;
+                z-index: 2;
+             
+               }
+               .links{
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background-color: $color1;
+                width: 100%;
+                transition: all 1s ease;
+                -webkit-transition: all 1s ease;
+                -moz-transition: all 1s ease;
+                -o-transition: all 1s ease;
+                margin: 0;
+                padding: 0;
+                transform: translateY(-300px);
+                z-index: -2;
+            
+                ul{
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    li{
+                        padding-bottom: 20px;
+                        padding-left: 10px;
+                        padding-top: 10px;
+                        a{
+                            text-decoration: none;
+                            color: $color4;
+                            font-weight: bolder;
+                            font-family: $font_3;
+                            font-size: 20px;
+                        }
+                    }
+                }
+               }
+
+               .links.stick{
+transform: translateY(0px);
+    z-index: 2;
+               }
+              .btn{
+                
+             
+                button{
+color: #15f4ee;
+cursor: pointer;
+font-weight: bold;
+padding: 5px;
+font-size: 16px;
+background-color: blue;
+border: none;
+box-shadow: 2px 2px 2px $color3;
+
+              }
+              }                    
+            
+        }
+
+    }
+}
+
+@media screen and (min-width:529px) and(max-width:998px) {
+    nav {
+        background-color: $color1;
+        height: 60px;
+        width: 100%;
+        margin: 0;
+
+        .container {
+            margin: 0 40px;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+            position: relative;
+
+            .menuBurger {
+                font-size: 1.4rem;
+                color: $color3;
+                font-weight: bold;
+                cursor: pointer;
+                z-index: 2;
+
+            }
+
+            .links {
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background-color: $color1;
+                width: 100%;
+                transition: all 1s ease;
+                -webkit-transition: all 1s ease;
+                -moz-transition: all 1s ease;
+                -o-transition: all 1s ease;
+                margin: 0;
+                padding: 0;
+                transform: translateY(-180px);
+                z-index: -2;
+
+                ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+
+                    li {
+                        padding-bottom: 20px;
+                        padding-left: 10px;
+                        padding-top: 10px;
+
+                        a {
+                            text-decoration: none;
+                            color: $color4;
+                            font-weight: bolder;
+                            font-family: $font_3;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+
+            .links.stick {
+                transform: translateY(0px);
+                z-index: 2;
+            }
+
+            .btn {
+
+
+                button {
+                    color: #15f4ee;
+                    cursor: pointer;
+                    font-weight: bold;
+                    padding: 10px;
+                    font-size: 16px;
+                    background-color: blue;
+                        border: none;
+                        box-shadow: 2px 2px 2px $color3;
+
+                }
+            }
+
+        }
+
+    }
+}
+
+@media screen and (min-width:999px) and(max-width:2500px) {
+    nav {
+        background-color: $color1;
+        height: 60px;
+        width: 100%;
+        margin: 0;
+
+        .container {
+            margin: 0 40px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            position: relative;
+
+            .menuBurger {
+                font-size: 1.4rem;
+                color: $color3;
+                font-weight: bold;
+                cursor: pointer;
+                z-index: 2;
+                display: none;
+
+            }
+
+            .links {
+                position: static;
+                top: 0px;
+                left: 0;
+                
+              
+                
+
+               
+                margin: 0;
+                padding: 0;
+            
+                z-index: 2;
+
+                ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    align-content: center;
+
+                    li {
+                        padding-bottom: 0px;
+                        padding-right: 30px;
+                        padding-top: 0px;
+
+                        a {
+                            text-decoration: none;
+                            color: $color4;
+                            font-weight: bolder;
+                            font-family: $font_3;
+                            font-size: 26px;
+                            -moz-font-size: 30px;
+                            -webkit-font-size: 30px;
+                            -ms-font-size:3px;
+                            transition: 1s all ease;
+                            &:hover {
+                                    border-bottom: 1px solid $color2;
+                                    color: #15f4ee;
+                                  
+                            
+                                }
+                          
+                        }
+                    }
+                }
+            }
+
+           
+
+            .btn {
+
+display: none;
+                button {
+                    color: #15f4ee;
+                    cursor: pointer;
+                    font-weight: bold;
+                    padding: 5px;
+                    font-size: 30px;
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: blue;
+                        border: none;
+                        box-shadow: 2px 2px 2px $color3;
+                        -webkit-box-shadow: 2px 2px 2px $color3;
+                        -moz-box-shadow: 2px 2px 2px $color3;
+                        -ms-box-shadow: 2px 2px 2px $color3;
+                        
+                }
+            }
+
+        }
+
+    }
+}
